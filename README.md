@@ -4,4 +4,4 @@
 | ------------- | ------------- |
 
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=JosephChuksN)](https://git.io/streak-stats&theme=prussian)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=JosephChuksN&theme=prussian)](https://git.io/streak-stats)
