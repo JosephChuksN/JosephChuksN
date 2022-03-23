@@ -3,7 +3,7 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=JosephChuksN&repo=github-readme-stats" />
 </a>
 <a href="https://github.com/JosephChuksN/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=JosephChuks&repo=convoychat" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JosephChuksN&layout=compact&theme=aura&hide_border=true" />
 </a>
 
 
