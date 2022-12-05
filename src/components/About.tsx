@@ -1,8 +1,8 @@
 import React from 'react'
 import chukwudi from  '../assets/chukwudi.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faReact, faJs, faCss3, faHtml5, faBootstrap} from "@fortawesome/free-brands-svg-icons"
 import { Slide } from 'react-awesome-reveal'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 
 const About:React.FC = () => {
@@ -34,14 +34,23 @@ const About:React.FC = () => {
      posuere nec ante non, varius aliquet ipsum. Mauris dignissim neque risus, vitae 
      fermentum tortor consectetur eget turpis.
     </span>
+    <span className="flex items-center gap-3 text-white font-headers hover:scale-75 transition-all delay-100 duration-300 hover:text-[#F78D26] cursor-pointer w-36">
+      View Github 
+      <FontAwesomeIcon icon={faLink} />
+      </span>
     <span className="text-gray-300 flex flex-col gap-3">
     <span className="font-headers">My skills:</span>
-    <div className="grid grid-cols-2 gap-2 font-para lg:w-3/5 items-center">
-    <span className="flex gap-2 items-center"><FontAwesomeIcon icon={faJs} className="text-yellow-600 text-lg" />JavaScript</span>
-    <span className="flex gap-2 items-center"><FontAwesomeIcon icon={faReact} className="text-[#61DBFB] text-lg" />React</span>
-    <span className="flex gap-2 items-center"><FontAwesomeIcon icon={faHtml5} className="text-[#e34c26] text-lg" />Html5</span>
-    <span className="flex gap-2 items-center"><FontAwesomeIcon icon={faCss3} className="text-[#264de4] text-lg" />Css3</span>
-    <span className="flex gap-2 items-center"><FontAwesomeIcon icon={faBootstrap} className="text-[#563d7c] text-lg" />Bootstrap</span>
+    <div className="flex flex-wrap gap-3 font-para lg:w-3/5 items-center">
+    <span className="rounded-md bg-[#ffffff2f] text-white p-1 ">JavaScript</span>
+    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">React</span>
+    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">TypeScript</span>
+    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">Git</span>
+    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">Github</span>
+    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">Firebase</span>
+    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">Sass</span>
+    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">Html5</span>
+    <span className="rounded-md bg-[#ffffff2f] text-white p-1" >Css3</span>
+    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">TailwindCss</span>
   </div>
     </span>
     </div>
