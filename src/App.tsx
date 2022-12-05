@@ -3,18 +3,20 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
+import SocailNetworks from './components/SocailNetworks';
 
 
 
 const  App:React.FC = () => {
   return (
-    <div className="bg-gradient-to-r from-[#0d1114] to-[#0c0f11] h-[100vh]">
+    <div>
       
      <Navbar />
      <Routes>
      <Route index element={<Home />} />
      <Route path='about' element={<About />} />
      </Routes>
+     <SocailNetworks />
     </div>
   );
 }
