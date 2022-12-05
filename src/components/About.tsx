@@ -41,16 +41,16 @@ const About:React.FC = () => {
     <span className="text-gray-300 flex flex-col gap-3">
     <span className="font-headers">My skills:</span>
     <div className="flex flex-wrap gap-3 font-para lg:w-3/5 items-center">
-    <span className="rounded-md bg-[#ffffff2f] text-white p-1 ">JavaScript</span>
-    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">React</span>
-    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">TypeScript</span>
-    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">Git</span>
-    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">Github</span>
-    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">Firebase</span>
-    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">Sass</span>
-    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">Html5</span>
-    <span className="rounded-md bg-[#ffffff2f] text-white p-1" >Css3</span>
-    <span  className="rounded-md bg-[#ffffff2f] text-white p-1">TailwindCss</span>
+    <span className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm ">JavaScript</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">React</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">TypeScript</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">Git</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">Github</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">Firebase</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">Sass</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">Html5</span>
+    <span className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm" >Css3</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">TailwindCss</span>
   </div>
     </span>
     </div>
