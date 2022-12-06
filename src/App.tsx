@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -8,9 +8,12 @@ import SocailNetworks from './components/SocailNetworks';
 
 
 const  App:React.FC = () => {
+
+
   return (
     <div>
       
+
      <Navbar />
      <Routes>
      <Route index element={<Home />} />
