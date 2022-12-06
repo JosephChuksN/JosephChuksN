@@ -55,7 +55,7 @@ useEffect(():void=>{
        <span className="text-2xl p-0.5 flex items-center justify-center font-bold text-[#F78D26] border-2 rounded-full border-[#F78D26] w-12 h-12  ">JN</span>
        <span onClick={()=>{setshow(!show)}} className="lg:hidden text-3xl p-1 text-[#F78D26]"><FontAwesomeIcon icon={faBars} /></span>
 
-       <div className={`fixed lg:static py-36 lg:py-0 justify-start items-center lg:justify-between lg:items-start top-0  left-0  h-full w-full lg:w-1/3 flex flex-col md:flex-row bg-[#0d1114] transition-all duration-500 delay-100 ease-in-out z-10 lg:bg-transparent gap-10 lg:opacity-100  font-medium text-2xl lg:text-base   ${show? "opacity-100" : "opacity-0"}`}>
+       <div  className={`fixed overscroll-none lg:static py-36 lg:py-0 justify-start items-center lg:justify-between lg:items-start top-0  left-0  h-full w-full lg:w-1/3 flex flex-col md:flex-row bg-[#0d1114] transition-all duration-500 delay-100 ease-in-out z-10 lg:bg-transparent gap-10 lg:opacity-100  font-medium text-2xl lg:text-base   ${show? "opacity-100" : "opacity-0"}`}>
         
             <span onClick={()=>{setshow(!show)}} className="absolute top-8 right-5 p-1 text-[#F78D26] text-4xl lg:hidden"><FontAwesomeIcon icon={faClose} /></span>
         

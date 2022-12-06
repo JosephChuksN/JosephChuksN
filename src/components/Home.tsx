@@ -6,7 +6,7 @@ import { Slide } from 'react-awesome-reveal'
 
 const Home:React.FC = () => {
   return (
-    <div className=" md:w-3/5 mx-auto px-3 md:px-10">
+    <div className=" md:w-3/5 mx-auto px-3 md:px-10 pt-16 lg:pt-10">
         <Slide>
     <div className="pt-16 lg:pt-10 flex flex-col gap-7 md:gap-5 ">
       <span className="text-[#F78D26] font-headers">Hello <span className="text-lg ">👋</span>, My name is</span>
