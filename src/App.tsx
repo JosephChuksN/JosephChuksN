@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
+import Projects from './components/Projects';
 import SocailNetworks from './components/SocailNetworks';
 
 
@@ -17,7 +18,8 @@ const  App:React.FC = () => {
      <Navbar />
      <Routes>
      <Route index element={<Home />} />
-     <Route path='about' element={<About />} />
+     <Route path="about" element={<About />} />
+     <Route path="projects" element={<Projects />} />
      </Routes>
      <SocailNetworks />
     </div>

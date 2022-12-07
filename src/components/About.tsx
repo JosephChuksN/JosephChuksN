@@ -19,7 +19,7 @@ const About:React.FC = () => {
     </span>
     
     <div className="flex flex-col lg:flex-row w-full lg:gap-0 gap-14 content-start">
-    <Slide damping={0.3} direction="left">
+    <Slide damping={0.3} direction="left" triggerOnce={true}>
     <div className="flex flex-col gap-5 lg:w-4/5 ">
     <span className="text-gray-300 text-base font-para ">
      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -55,7 +55,7 @@ const About:React.FC = () => {
     </span>
     </div>
     </Slide>
-    <Slide damping={0.5}  direction="right">
+    <Slide damping={0.5}  direction="right" triggerOnce={true}>
     <div className=" mx-auto flex items-center p-3 bg-[#F78D26] w-64 h-64 lg:w-72 lg:h-72 rounded-md relative">
     <span className= 'hover:bottom-0 hover:right-0  transition-all delay-75 duration-300 ease-in-out flex items-center bg-no-repeat bg-cover w-64 h-64 lg:w-72 lg:h-72 rounded-md absolute bottom-3 right-3' style={{backgroundImage:`url(${chukwudi})`}}></span>
     </div>
