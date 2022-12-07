@@ -12,7 +12,7 @@ const Navbar:React.FC = () => {
 
     const handleNavigation = ():void =>{
       const navNode = navbar.current
-         const currentScroll = window.scrollY
+         const currentScroll = window.pageYOffset
          if(currentScroll <= 0){
           navNode?.classList.remove("shadow-lg", "backdrop-blur-lg", "md:py-4")
           navNode?.classList.add("md:py-8")
@@ -33,9 +33,12 @@ const Navbar:React.FC = () => {
 
     }
     
-useEffect(():void=>{
+useEffect(() =>{
   window.addEventListener("scroll", handleNavigation)
 
+  return () =>{
+    window.removeEventListener("scroll", handleNavigation)
+  }
 
 
 },[threshHold])
