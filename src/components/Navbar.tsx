@@ -65,7 +65,7 @@ useEffect(() =>{
             <span onClick={()=>{setshow(!show)}} className="absolute top-8 right-5 p-1 text-[#F78D26] text-4xl lg:hidden"><FontAwesomeIcon icon={faClose} /></span>
         
           {NavItems.map(items=>(
-        <NavLink className={({isActive}:{isActive:boolean}): string => {return isActive ? activeItem : ""}} key={items.name} to={items.link}><span className=" transition-all delay-100 duration-500 ease-in-out cursor-pointer hover:opacity-70 hover:text-[#F78D26]" key={items.name}>{items.name}</span></NavLink>
+        <NavLink onClick={()=>{setshow(!show)}}  className={({isActive}:{isActive:boolean}): string => {return isActive ? activeItem : ""}} key={items.name} to={items.link}><span className=" transition-all delay-100 duration-500 ease-in-out cursor-pointer hover:opacity-70 hover:text-[#F78D26]" key={items.name}>{items.name}</span></NavLink>
           ))}
        </div>
 
