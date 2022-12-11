@@ -1,11 +1,12 @@
 import React, {useState, useEffect, useRef} from 'react'
+import { NavLink } from 'react-router-dom'
 import { NavItems } from '../interfaces/NavbarInterface'
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Navbar:React.FC = () => {
     const [show, setshow] = useState<boolean>(false)
-    const activeItem:string = " text-[#F78D26]"
+    const activeItem:string = "text-[#F78D26] scale-75 transition-all delay-75 duration-300 ease-in-out"
     const navbar = useRef< null | HTMLDivElement>(null)
 
    let threshHold:number = 0;
@@ -45,8 +46,9 @@ useEffect(() =>{
 
 
     const NavItems:NavItems[] =[
+      {name:"Home", link:"/"},
       {name:"About", link:"about"},
-      {name:"Projects", link:"arojects"},
+      {name:"Projects", link:"projects"},
       {name:"Resume", link:"resume"},
       {name:"Contact", link:"contact"}
     ]
@@ -63,7 +65,7 @@ useEffect(() =>{
             <span onClick={()=>{setshow(!show)}} className="absolute top-8 right-5 p-1 text-[#F78D26] text-4xl lg:hidden"><FontAwesomeIcon icon={faClose} /></span>
         
           {NavItems.map(items=>(
-           <span className="text-white transition-all delay-100 duration-500 ease-in-out cursor-pointer hover:opacity-70 hover:text-[#F78D26]" key={items.name}>{items.name}</span>
+        <NavLink className={({isActive}:{isActive:boolean}): string => {return isActive ? activeItem : ""}} key={items.name} to={items.link}><span className=" transition-all delay-100 duration-500 ease-in-out cursor-pointer hover:opacity-70 hover:text-[#F78D26]" key={items.name}>{items.name}</span></NavLink>
           ))}
        </div>
 
