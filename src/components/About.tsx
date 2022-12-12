@@ -10,7 +10,7 @@ const About:React.FC = () => {
    
 
   return (
-    <div className="flex flex-col  gap-10 md:w-3/5 mx-auto px-5 md:px-0 lg:pt-10 pt-16 translate-y-20">
+    <div className="flex flex-col  gap-10 md:w-3/5 mx-auto px-5 md:px-0 lg:pt-10 pt-12 translate-y-20">
         
     <span className="text-4xl text-white font-semibold font-headers flex gap-1">
     <span className="text-[#F78D26]">{`{`}</span> 
