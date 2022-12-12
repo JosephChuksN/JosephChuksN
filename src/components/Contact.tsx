@@ -9,11 +9,15 @@ const Contact = () => {
     <span className="text-[#F78D26]">{`}`}</span>
     </span>
     <div className="flex flex-col lg:flex-row w-full  gap-10 content-start justify-center px-5 py-3">
-        <span className="text-gray-300 font-para  text-base w-[50%] p-2">
+        <span className="text-gray-300 font-para  text-lg w-[50%] p-2">
         Interested in working together? Reach out to me through the 
         contact form below. Feel free to reach out to me 
         through my social media handles or send a mail  <br />
-        <a className="text-[#F78D26] " href="mailto:hellonwosu@gmail.com">hellonwosu@gmail.com</a>
+        <span className="text-[#F78D26] transition-all delay-75 duration-300 ease-in-out hover:underline underline-offset-8 ">
+         <a  href="mailto:hellonwosu@gmail.com">
+            hellonwosu@gmail.com
+         </a>
+        </span>
         </span>
         <div className="w-[50%]">
         <form className="flex flex-col gap-5 w-full p-2" action="">
