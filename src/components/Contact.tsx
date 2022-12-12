@@ -20,23 +20,26 @@ const Contact = () => {
         </span>
         </span>
         <div className="lg:w-[50%]">
-        <form className="flex flex-col gap-5 w-full lg:p-2" action="">
-        <input className="rounded-sm p-2 bg-[#ffffff0f]" 
+        <form className="flex flex-col gap-5 w-full" action="">
+        <input className="rounded-sm p-2 bg-[#ffffff0f] text-gray-100 font-para" 
          type="text" 
          name=""  
          placeholder="Name"
          />
-        <input className="rounded-sm p-2 bg-[#ffffff0f]" 
+        <input className="rounded-sm p-2 bg-[#ffffff0f]  text-gray-100 font-para" 
         type="email" 
         name=""  
         placeholder="Email"
         />
-        <textarea className="rounded-sm p-2 bg-[#ffffff0f] resize-none"
+        <textarea className="rounded-sm p-2 bg-[#ffffff0f]  text-gray-100 resize-none font-para"
         name=""
         cols={10}
         rows={8}
         placeholder="Your message"
          />
+         <span className="bg-[#F78D26]/70 hover:bg-[#F78D26] transition-all delay-75 duration-300 ease-out p-3 flex items-center justify-center rounded-sm text-gray-50 font-headers">
+            Send message
+         </span>
             </form>
         </div>
     </div>
