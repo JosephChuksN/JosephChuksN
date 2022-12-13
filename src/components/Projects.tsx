@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjectData from './ProjectData'
-import linkpath from '../assets/linkpathphoto.png'
 import { projectDatas } from '../projectData'
 import { Slide } from 'react-awesome-reveal'
 
@@ -15,12 +14,12 @@ const Projects:React.FC = () => {
     Projects 
     <span className="text-[#F78D26]">{`}`}</span>
     </span>
-    <div>{projectDatas.map(data=>(
+   {projectDatas.map(data=>(
       <ProjectData 
        data={data}
        />
     ))}</div>
-    </div>
+   
   )
 }
 
