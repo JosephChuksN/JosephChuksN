@@ -5,7 +5,7 @@ import { NavHookInterface } from "../interfaces/navHookInterface";
  const useNavbarControl = ():NavHookInterface => {
     const [isNavOpen, setIsNavOpen] = useState<boolean>(false)
 
-    const handleNavigation = ():void => setIsNavOpen(!isNavOpen)
+    const controlNavigation = ():void => setIsNavOpen(!isNavOpen)
 
 
     useEffect(()=>{
@@ -18,9 +18,9 @@ import { NavHookInterface } from "../interfaces/navHookInterface";
         return ()=>{
             document.body.style.overflow = documentStyle
         }
-    })
+    },[isNavOpen])
 
-return {isNavOpen, handleNavigation}
+return {isNavOpen,  controlNavigation}
 }
 
 export default useNavbarControl 
