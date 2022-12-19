@@ -19,14 +19,14 @@ const Navbar:React.FC = () => {
          const currentScroll = window.pageYOffset
          if(currentScroll <= 0){
           navNode?.classList.remove("shadow-lg", "backdrop-blur-lg", "md:py-4", "fixed")
-          navNode?.classList.add("md:py-8", "sticky")
+          navNode?.classList.add("md:py-8", "sticky", "top-0")
          }
          if(currentScroll > threshHold  && !navNode?.classList.contains("-translate-y-full")){
           navNode?.classList.remove("shadow-lg",  "backdrop-blur-lg")
           navNode?.classList.add("-translate-y-full")   
          }
          if(currentScroll < threshHold  && navNode?.classList.contains("-translate-y-full")){
-          navNode?.classList.remove("-translate-y-full", "md:py-8", "sticky")
+          navNode?.classList.remove("-translate-y-full", "md:py-8", "sticky", "top-0")
           navNode?.classList.add("shadow-lg", "backdrop-blur-lg", "md:py-4", "fixed" )
           
          }
