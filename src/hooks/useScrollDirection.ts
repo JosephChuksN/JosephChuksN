@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
+import { useScrollInterface } from "../interfaces/useScrollDirectionInterface";
 
 
 
-const useScrollDirection = ():string=>{
+const useScrollDirection = ():useScrollInterface=>{
 
     const [scrollDirection, setScrollDirection] = useState<string>("")
     
@@ -27,7 +28,7 @@ let lastScrollY:number = window.scrollY
 }, [scrollDirection])
 
 
-return scrollDirection
+return  {scrollDirection}
 }
 
 export default useScrollDirection;

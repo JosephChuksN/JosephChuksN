@@ -1,51 +1,54 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useRef} from 'react'
 import { NavLink } from 'react-router-dom'
 import useNavbarControl from '../hooks/useNavbarControl'
 import { NavHookInterface } from '../interfaces/navHookInterface'
+import useScrollDirection from '../hooks/useScrollDirection'
 import { NavItems } from '../interfaces/NavbarInterface'
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 const Navbar:React.FC = () => {
-    const [show, setshow] = useState<boolean>(false)
+    
     const activeItem:string = "text-[#F78D26] scale-75 transition-all delay-75 duration-300 ease-in-out"
     const navbar = useRef< null | HTMLDivElement>(null)
     const {isNavOpen,  controlNavigation} = useNavbarControl()
+    const { scrollDirection} = useScrollDirection()
 
-   let threshHold:number = 0;
+  //  let threshHold:number = 0;
 
-    const handleNavScroll = ():void =>{
-      const navNode = navbar.current
-         const currentScroll = window.pageYOffset
-         if(currentScroll <= 0){
-          navNode?.classList.remove("shadow-lg", "backdrop-blur-lg", "md:py-4", "fixed")
-          navNode?.classList.add("md:py-8", "sticky", "top-0")
-         }
-         if(currentScroll > threshHold  && !navNode?.classList.contains("-translate-y-full")){
-          navNode?.classList.remove("shadow-lg",  "backdrop-blur-lg")
-          navNode?.classList.add("-translate-y-full")   
-         }
-         if(currentScroll < threshHold  && navNode?.classList.contains("-translate-y-full")){
-          navNode?.classList.remove("-translate-y-full", "md:py-8", "sticky", "top-0")
-          navNode?.classList.add("shadow-lg", "backdrop-blur-lg", "md:py-4", "fixed" )
+    // const handleNavScroll = ():void =>{
+    //   const navNode = navbar.current
+    //      const currentScroll = window.pageYOffset
+    //      if(currentScroll <= 0){
+    //       navNode?.classList.remove("shadow-lg", "backdrop-blur-lg", "md:py-4", "fixed")
+    //       navNode?.classList.add("md:py-8", "sticky", "top-0")
+    //      }
+    //      if(currentScroll > threshHold  && !navNode?.classList.contains("-translate-y-full")){
+    //       navNode?.classList.remove("shadow-lg",  "backdrop-blur-lg")
+    //       navNode?.classList.add("-translate-y-full")   
+    //      }
+    //      if(currentScroll < threshHold  && navNode?.classList.contains("-translate-y-full")){
+    //       navNode?.classList.remove("-translate-y-full", "md:py-8", "sticky", "top-0")
+    //       navNode?.classList.add("shadow-lg", "backdrop-blur-lg", "md:py-4", "fixed" )
           
-         }
+    //      }
      
      
-       threshHold = currentScroll
+    //    threshHold = currentScroll
 
 
-    }
+    // }
     
-useEffect(() =>{
-  window.addEventListener("scroll", handleNavScroll)
+// useEffect(() =>{
+//   window.addEventListener("scroll", handleNavScroll)
 
-  return () =>{
-    window.removeEventListener("scroll", handleNavScroll)
-  }
+//   return () =>{
+//     window.removeEventListener("scroll", handleNavScroll)
+//   }
 
 
-},[threshHold])
+// },[threshHold])
 
 
     const NavItems:NavItems[] =[
@@ -58,7 +61,7 @@ useEffect(() =>{
    
 
   return (
-    <div ref={navbar} className={`shadow-[#00000082] box-border block top-0 transition-all delay-75 duration-200 ease-in-out fixed w-full py-4 md:py-8 font-headers text-white z-50 `}>
+    <div ref={navbar} className={`sticky shadow-[#00000082] ${scrollDirection === "down"? "-translate-y-full" : "top-0 backdrop-blur-lg "}  box-border block transition-all delay-75 duration-500 ease-in-out w-full py-4 md:py-8 font-headers text-white z-50 `}>
     <div className=" flex justify-between items-center px-3 lg:px-56 relative">
        <span className="text-2xl p-0.5 flex items-center justify-center font-bold text-[#F78D26] border-2 rounded-full border-[#F78D26] w-12 h-12  ">JN</span>
        <span onClick={controlNavigation} className="lg:hidden text-3xl p-1 text-[#F78D26]"><FontAwesomeIcon icon={faBars} /></span>
