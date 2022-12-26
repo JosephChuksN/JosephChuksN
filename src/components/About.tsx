@@ -10,7 +10,7 @@ const About:React.FC = () => {
    
 
   return (
-    <div className="flex flex-col  gap-10 md:w-3/5 mx-auto px-5 md:px-0 lg:pt-10 pt-12 translate-y-20">
+    <div className="flex flex-col  gap-10 md:w-3/5 mx-auto px-5 md:px-0 lg:pt-0 pt-0 translate-y-20">
         
     <span className="text-4xl text-white font-semibold font-headers flex gap-1">
     <span className="text-[#F78D26]">{`{`}</span> 
@@ -35,7 +35,7 @@ const About:React.FC = () => {
      fermentum tortor consectetur eget turpis.
     </span>
     <span className="flex items-center gap-3 text-white font-headers hover:scale-75 transition-all delay-100 duration-300 hover:text-[#F78D26] cursor-pointer w-36">
-      View Github 
+      <a href="https://github.com/JosephChuksN" target="blank">View Github </a>
       <FontAwesomeIcon icon={faLink} />
       </span>
     <span className="text-gray-300 flex flex-col gap-3">

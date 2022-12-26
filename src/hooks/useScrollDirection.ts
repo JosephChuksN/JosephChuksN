@@ -19,6 +19,7 @@ let lastScrollY:number = window.scrollY
 
       }
       lastScrollY = scrollYDirection > 0 ? scrollYDirection : 0
+
     }
 
     window.addEventListener("scroll", updateDirection)
