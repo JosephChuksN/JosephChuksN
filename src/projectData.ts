@@ -1,6 +1,6 @@
 import { ProjectInterface } from "./interfaces/projectDataInterface";
 import Efolio  from "./assets/Efolio.png"
-import linkpath from "./assets/linpath-2.png"
+import linkpath from "./assets/linkpath-2.png"
 import weatherApp from "./assets/weatherApp.png"
 
 
