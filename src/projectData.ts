@@ -27,7 +27,7 @@ const projectDatas:ProjectInterface[]  = [
         name:"WeatherApp",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum diam leo, a lacinia lacus condimentum id. Mauris sodales fringilla magna ut",
         technologies:["Html", "Css", "JavaScript", "OpenweatherApi"],
-        image:weatherApp,
+        image:weatherapp,
         liveSite:"https://josephchuksn.github.io/WeatherApp/",
         sourceCode:"https://github.com/JosephChuksN/WeatherApp"
     },
