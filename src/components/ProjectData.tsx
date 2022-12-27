@@ -25,9 +25,9 @@ useEffect(()=>{
 
   return (
     <div key={data.name} className="w-full h-full  flex flex-col lg:flex-row items-center justify-center lg:pb-5 p-1 pb-16 ">
-      <div className="lg:w-[39rem] w-full ">
+      <div className="lg:w-[39rem] w-full h-full">
       <Slide triggerOnce={true}  damping={0.3} direction="left">
-     <span ref={image} className={`flex  w-full rounded-l-md  bg-no-repeat bg-cover ${hover ? "scale-110": ""} `} style={{backgroundImage:`url(${data.image})`}}></span>
+     <span ref={image} className={`flex  w-full h-[300px] lg:h-[65vh] rounded-l-md  bg-no-repeat bg-cover ${hover ? "scale-110": ""} `} style={{backgroundImage:`url(${data.image})`}}></span>
      </Slide>
       </div>
      <div className="w-full lg:w-[30rem] " >
