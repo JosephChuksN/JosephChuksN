@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faArrowAltCircleRight} from '@fortawesome/free-regular-svg-icons'
 import { Slide } from 'react-awesome-reveal'
@@ -19,9 +20,10 @@ const Home:React.FC = () => {
       </span>
       <span className="text-gray-300 font-headers flex gap-5 items-center">
         See More 
-      <span className="text-3xl transition-all delay-100 duration-200 ease-in-out hover:text-[#F78D26] hover:scale-125  ">
-        <FontAwesomeIcon icon={faArrowAltCircleRight} />
+        <span className="text-3xl transition-all delay-100 duration-200 ease-in-out hover:text-[#F78D26] hover:scale-125  ">
+        <Link to="/about"> <FontAwesomeIcon icon={faArrowAltCircleRight} /></Link>
       </span>
+      
       </span>
       
         </div>

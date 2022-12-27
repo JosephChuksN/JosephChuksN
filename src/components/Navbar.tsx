@@ -55,7 +55,6 @@ const Navbar:React.FC = () => {
       {name:"Home", link:"/"},
       {name:"About", link:"about"},
       {name:"Projects", link:"projects"},
-      {name:"Resume", link:"resume"},
       {name:"Contact", link:"contact"}
     ]
    
@@ -72,6 +71,7 @@ const Navbar:React.FC = () => {
         
           {NavItems.map(items=>(
         <NavLink onClick={controlNavigation}  className={({isActive}:{isActive:boolean}): string => {return isActive ? activeItem : ""}} key={items.name} to={items.link}><span className=" transition-all delay-100 duration-500 ease-in-out cursor-pointer hover:opacity-70 hover:text-[#F78D26]" key={items.name}>{items.name}</span></NavLink>
+        
           ))}
        </div>
 

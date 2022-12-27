@@ -34,29 +34,29 @@ const About:React.FC = () => {
      posuere nec ante non, varius aliquet ipsum. Mauris dignissim neque risus, vitae 
      fermentum tortor consectetur eget turpis.
     </span>
-    <span className="flex items-center gap-3 text-white font-headers hover:scale-75 transition-all delay-100 duration-300 hover:text-[#F78D26] cursor-pointer w-36">
+    <span className="flex items-center gap-3 text-[#F78D26] font-headers hover:scale-75 transition-all delay-100 duration-300 cursor-pointer w-36">
       <a href="https://github.com/JosephChuksN" target="blank">View Github </a>
       <FontAwesomeIcon icon={faLink} />
       </span>
     <span className="text-gray-300 flex flex-col gap-3">
-    <span className="font-headers">My skills:</span>
+    <span className="font-headers text-lg text-[#F78D26]">My skills:</span>
     <div className="flex flex-wrap gap-3 font-para lg:w-3/5 items-center">
-    <span className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm ">JavaScript</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">React</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">TypeScript</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">Git</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">Github</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">Firebase</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">Sass</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">Html5</span>
-    <span className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm" >Css3</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50 p-1.5 text-sm">TailwindCss</span>
+    <span className="rounded-md bg-[#00000082] text-gray-50 py-1.5 px-3 text-base">JavaScript</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">React</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">TypeScript</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">Git</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">Github</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">Firebase</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">Sass</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">Html5</span>
+    <span className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base" >Css3</span>
+    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">TailwindCss</span>
   </div>
     </span>
     </div>
     </Slide>
     <Slide damping={0.5}  direction="right" triggerOnce={true} >
-    <div className=" mx-auto flex items-center p-3 bg-[#F78D26] w-64 h-64 lg:w-72 lg:h-72 rounded-md relative">
+    <div className=" mx-auto flex items-center p-3 bg-[#F78D26] w-64 h-64 lg:w-72 lg:h-72 rounded-md relative mb-16 lg:mb-auto">
     <span className= 'hover:bottom-0 hover:right-0  transition-all delay-75 duration-300 ease-in-out flex items-center bg-no-repeat bg-cover w-64 h-64 lg:w-72 lg:h-72 rounded-md absolute bottom-3 right-3' style={{backgroundImage:`url(${chukwudi})`}}></span>
     </div>
     </Slide>
