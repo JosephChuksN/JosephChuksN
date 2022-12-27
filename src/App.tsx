@@ -16,7 +16,7 @@ const  App:React.FC = () => {
 
 
   useEffect(()=>{
-    AOS.init({delay: 300, duration: 300, once: true, easing: "ease-in-out"})
+    AOS.init({delay: 300, duration: 700, once: true, easing: "ease-in-out"})
   },[])
 
   return (
