@@ -3,4 +3,6 @@ export interface ProjectInterface {
  description:string
  technologies:string[]
  image:string
+ liveSite:string
+ sourceCode:string
 }

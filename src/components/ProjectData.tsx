@@ -33,7 +33,7 @@ useEffect(()=>{
      <div className="w-full lg:w-[30rem] " >
      <Slide damping={0.5}  direction="right" triggerOnce={true}>
      <div  className="flex gap-10  lg:gap-3 flex-col   h-full lg:h-[65vh]  justify-center   w-full  bg-[#000000b5]  lg:bg-gradient-to-l from-[#0c0f11] to-[#0d1114] py-3 px-2  lg:px-10  shadow-xl shadow-[#00000082] rounded-r-md">
-      <span className="text-white text-xl font-headers">{data.name}</span>
+      <span className="text-[#F78D26] text-xl font-headers">{data.name}</span>
       <span className="text-gray-300 font-para">{data.description}</span>
         <span className="font-headers text-gray-50 flex gap-3 items-center  w-full">
           {data.technologies.map(technologies=>(
@@ -41,8 +41,8 @@ useEffect(()=>{
           ))}
         </span>
         <span className="text-white font-headers flex gap-5">
-          <span className="border-2 p-1 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out hover:text-[#F78D26] hover:border-[#F78D26] hover:scale-90">View Live</span>
-          <span className="border-2 p-1 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out hover:text-[#F78D26] hover:border-[#F78D26] hover:scale-90">Source Code</span>
+          <a href={data.liveSite} className="border-2 p-1 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out hover:text-[#F78D26] hover:border-[#F78D26] hover:scale-90"><span >View Live</span></a>
+          <a href={data.sourceCode} className="border-2 p-1 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out hover:text-[#F78D26] hover:border-[#F78D26] hover:scale-90"><span >Source Code</span></a>
         </span>
     </div>
     </Slide>
