@@ -8,7 +8,7 @@ const Projects:React.FC = () => {
 
 
   return (
-    <div  className="flex flex-col  gap-10 md:w-3/5 mx-auto px-5 md:px-0 lg:pt-0 pt-12 translate-y-20 relative">
+    <div  className="flex flex-col lg:gap-36 gap-10 md:w-3/5 mx-auto px-5 md:px-0 lg:pt-0 pt-12 translate-y-20 relative">
       <span className="text-4xl text-white font-semibold font-headers flex gap-1 mb-3">
     <span className="text-[#F78D26]">{`{`}</span> 
     Projects 
@@ -17,6 +17,7 @@ const Projects:React.FC = () => {
    {projectDatas.map(data=>(
       <ProjectData 
        data={data}
+       
        />
     ))}</div>
    

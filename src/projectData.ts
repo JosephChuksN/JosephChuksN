@@ -1,8 +1,7 @@
 import { ProjectInterface } from "./interfaces/projectDataInterface";
-import linkpath from './assets/linkpathphoto.png'
-import portfoliobuild from './assets/portfoliobuild.png'
-import weatherApp from './assets/weatherapp.png'
-import todoApp from './assets/todophoto.png'
+import Efolio  from "./assets/Efolio.png"
+import linkpath from "./assets/linpath-2.png"
+import weatherApp from "./assets/weatherApp.png"
 
 
 
@@ -18,7 +17,7 @@ const projectDatas:ProjectInterface[]  = [
         name:"E-Folio",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum diam leo, a lacinia lacus condimentum id. Mauris sodales fringilla magna ut",
         technologies:["React", "Tailwind", "Firebase", "Node.js"],
-        image:portfoliobuild
+        image:Efolio
     },
     {
         name:"WeatherApp",
@@ -26,12 +25,12 @@ const projectDatas:ProjectInterface[]  = [
         technologies:["Html", "Css", "JavaScript", "OpenweatherApi"],
         image:weatherApp
     },
-    {
-        name:"Tasktivities",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum diam leo, a lacinia lacus condimentum id. Mauris sodales fringilla magna ut",
-        technologies:["React", "TypeScript", "Tailwind", "Firebase", "Node.js"],
-        image:todoApp
-    }
+    // {
+    //     name:"Tasktivities",
+    //     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum diam leo, a lacinia lacus condimentum id. Mauris sodales fringilla magna ut",
+    //     technologies:["React", "TypeScript", "Tailwind", "Firebase", "Node.js"],
+    //     image:todoApp
+    // }
 
 
 ]
