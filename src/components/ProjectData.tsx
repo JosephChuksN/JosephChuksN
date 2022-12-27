@@ -24,7 +24,7 @@ useEffect(()=>{
 },[hover, ImageNode])
 
   return (
-    <div key={data.name} className="w-full h-full  flex items-center justify-center lg:pb-5 p-1  ">
+    <div key={data.name} className="w-full h-full  flex items-center justify-center lg:pb-5 p-1 pb-16 mx-auto ">
       <div className="lg:w-[39rem] w-full">
       <Slide triggerOnce={true}  damping={0.3} direction="left">
      <span ref={image} className={`flex w-full lg:opacity-90 transition-all duration-300 ease-in-out delay-75  opacity-40   h-full lg:h-[65vh]  rounded-l-md  bg-no-repeat bg-cover ${hover ? "scale-110": ""} `} style={{backgroundImage:`url(${data.image})`}}></span>
