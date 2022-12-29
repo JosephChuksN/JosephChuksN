@@ -27,7 +27,7 @@ const Contact = () => {
         </span>
         </span>
         <div className="lg:w-[50%]">
-        <form className="flex flex-col gap-5 w-full" action="">
+        <form className="flex flex-col gap-5 w-full" action="https://getform.io/f/b720c0ca-a4f7-4b5c-8cc8-aa14137afbd0" method="POST">
         <input className="rounded-sm p-2 bg-[#ffffff0f] text-gray-100 font-para" 
          type="text" 
          name="name"  
@@ -50,9 +50,9 @@ const Contact = () => {
         rows={8}
         placeholder="Your message"
          />
-         <span className="bg-[#F78D26]/70 hover:bg-[#F78D26] transition-all delay-75 duration-300 ease-out p-3 flex items-center justify-center rounded-sm text-gray-50 font-headers">
+         <button type="submit" className="bg-[#F78D26]/70 hover:bg-[#F78D26] transition-all delay-75 duration-300 ease-out p-3 flex items-center justify-center rounded-sm text-gray-50 font-headers">
             Send message
-         </span>
+         </button>
             </form>
         </div>
     </div>
