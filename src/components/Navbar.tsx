@@ -62,7 +62,7 @@ const Navbar:React.FC = () => {
 
   return (
     <div ref={navbar} className={`sticky shadow-[#00000082] ${scrollDirection === "down"? "-translate-y-full" : "top-0 backdrop-blur-lg "} transition-all delay-75 duration-500 ease-in-out w-full py-4 md:py-8 font-headers text-white z-50 `}>
-    <div className=" flex justify-between items-center px-3 lg:px-56 relative">
+    <div className=" flex justify-between items-center px-5 lg:px-56 relative">
        <img className=" flex items-center justify-center   w-12 h-12  " src={portfoliologo} alt="logo" />
        <span onClick={controlNavigation} className="lg:hidden text-3xl p-1 text-[#F78D26]"><FontAwesomeIcon icon={faBars} /></span>
 
