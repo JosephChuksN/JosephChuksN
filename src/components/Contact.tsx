@@ -1,6 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Contact = () => {
+
+   const [name, setName] = useState<string>("")
+   const [email, setEmail] = useState<string>("")
+   const [message, setMessage] = useState<string>("")
+
+
+
   return (
     <div className="flex flex-col  gap-10 md:w-3/5 mx-auto px-5 md:px-0  translate-y-20 pb-14">
           <span className="text-4xl text-white font-semibold font-headers flex gap-1 mb-3 ">
@@ -23,16 +30,22 @@ const Contact = () => {
         <form className="flex flex-col gap-5 w-full" action="">
         <input className="rounded-sm p-2 bg-[#ffffff0f] text-gray-100 font-para" 
          type="text" 
-         name=""  
+         name="name"  
+         value={name}
+         onChange={(e)=>{setName(e.target.value)}}
          placeholder="Name"
          />
         <input className="rounded-sm p-2 bg-[#ffffff0f]  text-gray-100 font-para" 
         type="email" 
-        name=""  
+        name="email"  
+        value={email}
+        onChange={(e)=>{setEmail(e.target.value)}}
         placeholder="Email"
         />
         <textarea className="rounded-sm p-2 bg-[#ffffff0f]  text-gray-100 resize-none font-para"
-        name=""
+        name="message"
+        value={message}
+        onChange={(e)=>{setMessage(e.target.value)}}
         cols={10}
         rows={8}
         placeholder="Your message"
