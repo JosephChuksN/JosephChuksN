@@ -81,7 +81,7 @@ const Navbar:React.FC = () => {
        <img className=" flex items-center justify-center   w-12 h-12  " src={portfoliologo} alt="logo" />
        <span onClick={controlNavigation} className="lg:hidden text-3xl p-1 text-[#F78D26]"><FontAwesomeIcon icon={faBars} /></span>
 
-       <div  className={`fixed flex box-border overscroll-none lg:static py-36 lg:py-0 justify-start items-center lg:justify-between lg:items-start top-0  left-0  h-[100vh] lg:h-7 w-full lg:w-1/3  flex-col md:flex-row bg-[#0d1114] transition-all duration-700 delay-100 ease-in-out  lg:bg-transparent gap-10 lg:opacity-100 z-10 font-medium text-2xl lg:text-base   ${isNavOpen? "opacity-100  visible" : " opacity-0 invisible"}`}>
+       <div  className={`fixed flex box-border overscroll-none lg:static py-36 lg:py-0 justify-start items-center lg:justify-between lg:items-start top-0  left-0  h-[100vh] lg:h-7 w-full lg:w-1/3  flex-col md:flex-row bg-[#0d1114] transition-all duration-700 delay-100 ease-in-out  lg:bg-transparent gap-10 lg:opacity-100 z-10 font-medium text-2xl lg:text-base lg:visible   ${isNavOpen? "opacity-100  visible" : " opacity-0 invisible"}`}>
         
             <span onClick={controlNavigation} className="absolute top-3 right-5 p-1 text-[#F78D26] text-4xl lg:hidden"><FontAwesomeIcon icon={faClose} /></span>
         
