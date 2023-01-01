@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 import { NavLink } from 'react-router-dom'
 import useNavbarControl from '../hooks/useNavbarControl'
 import portfoliologo from '../assets/portfoliologo.png'
@@ -50,7 +50,22 @@ const Navbar:React.FC = () => {
 
 
 // },[threshHold])
+// const currentScroll = window.scrollY
 
+// useEffect(()=>{
+//   const navNode = navbar.current
+  
+//    const handleAddClass = ():void =>{
+//     if(scrollDirection==="up"){
+//       navNode?.classList.add("shadow-lg")
+//     }else if (scrollDirection==="down" && currentScroll <=0){
+//       navNode?.classList.remove("shadow-lg")
+//     }
+//    }
+//    handleAddClass()
+// },[scrollDirection, currentScroll])
+
+    
 
     const NavItems:NavItems[] =[
       {name:"Home", link:"/"},
@@ -66,9 +81,9 @@ const Navbar:React.FC = () => {
        <img className=" flex items-center justify-center   w-12 h-12  " src={portfoliologo} alt="logo" />
        <span onClick={controlNavigation} className="lg:hidden text-3xl p-1 text-[#F78D26]"><FontAwesomeIcon icon={faBars} /></span>
 
-       <div  className={`fixed flex box-border overscroll-none lg:static py-36 lg:py-0 justify-start items-center lg:justify-between lg:items-start top-0  left-0  h-[100vh] lg:h-7 w-full lg:w-1/3  flex-col md:flex-row bg-[#0d1114] transition-all duration-500 delay-100 ease-in-out z-10 lg:bg-transparent gap-10 lg:opacity-100  font-medium text-2xl lg:text-base   ${isNavOpen? "opacity-100" : "opacity-0"}`}>
+       <div  className={`fixed flex box-border overscroll-none lg:static py-36 lg:py-0 justify-start items-center lg:justify-between lg:items-start top-0  left-0  h-[100vh] lg:h-7 w-full lg:w-1/3  flex-col md:flex-row bg-[#0d1114] transition-all duration-700 delay-100 ease-in-out  lg:bg-transparent gap-10 lg:opacity-100 z-10 font-medium text-2xl lg:text-base   ${isNavOpen? "opacity-100  visible" : " opacity-0 invisible"}`}>
         
-            <span onClick={controlNavigation} className="absolute top-8 right-5 p-1 text-[#F78D26] text-4xl lg:hidden"><FontAwesomeIcon icon={faClose} /></span>
+            <span onClick={controlNavigation} className="absolute top-3 right-5 p-1 text-[#F78D26] text-4xl lg:hidden"><FontAwesomeIcon icon={faClose} /></span>
         
           {NavItems.map(items=>(
         <NavLink onClick={controlNavigation}  className={({isActive}:{isActive:boolean}): string => {return isActive ? activeItem : ""}} key={items.name} to={items.link}><span className=" transition-all delay-100 duration-500 ease-in-out cursor-pointer hover:opacity-70 hover:text-[#F78D26]" key={items.name}>{items.name}</span></NavLink>

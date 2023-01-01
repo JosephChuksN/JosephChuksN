@@ -34,10 +34,11 @@ const About:React.FC = () => {
      posuere nec ante non, varius aliquet ipsum. Mauris dignissim neque risus, vitae 
      fermentum tortor consectetur eget turpis.
     </span>
+    <a href="https://github.com/JosephChuksN"  target="_blank" rel="noopener noreferrer">
     <span className="flex items-center gap-3 text-[#F78D26] font-headers hover:scale-75 transition-all delay-100 duration-300 cursor-pointer w-36">
-      <a href="https://github.com/JosephChuksN" target="blank">View Github </a>
+      View Github 
       <FontAwesomeIcon icon={faLink} />
-      </span>
+      </span></a>
     <span className="text-gray-300 flex flex-col gap-3">
     <span className="font-headers text-lg text-[#F78D26]">My skills:</span>
     <div className="flex flex-wrap gap-3 font-para lg:w-3/5 items-center">
