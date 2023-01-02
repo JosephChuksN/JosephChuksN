@@ -1,7 +1,8 @@
 import { ProjectInterface } from "./interfaces/projectDataInterface";
-import Efolio  from "./assets/Efolio.png"
+import Efolio  from "./assets/efolio.png"
 import linkpath from "./assets/linkpath-2.png"
 import weatherapp from "./assets/weatherapp.png"
+import api from "./assets/api.png"
 
 
 
@@ -41,12 +42,14 @@ const projectDatas:ProjectInterface[]  = [
         liveSite:"https://josephchuksn.github.io/WeatherApp/",
         sourceCode:"https://github.com/JosephChuksN/WeatherApp"
     },
-    // {
-    //     name:"Tasktivities",
-    //     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum diam leo, a lacinia lacus condimentum id. Mauris sodales fringilla magna ut",
-    //     technologies:["React", "TypeScript", "Tailwind", "Firebase", "Node.js"],
-    //     image:todoApp
-    // }
+    {
+        name:"API",
+        description:`A Rest API with basic functionality of sign up, log in, create, Update, and delete.`,
+        technologies:[ "Node.js", "Express"],
+        image:api,
+        liveSite:"",
+        sourceCode:"https://github.com/JosephChuksN/linkpath_api"
+    }
 
 
 ]
