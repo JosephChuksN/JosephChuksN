@@ -1,6 +1,5 @@
-import React,{ useState } from 'react'
+import React from 'react'
 import chukwudi from  '../assets/chukwudi.jpg'
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Slide } from 'react-awesome-reveal'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
