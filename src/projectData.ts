@@ -27,7 +27,7 @@ const projectDatas:ProjectInterface[]  = [
                      their details. Built with React and tailwind Css.
                      `,
         technologies:["React", "TailwindCss"],
-        image:Efolio,
+        image:efolio,
         liveSite:"https://portfolio-builder-josephn.vercel.app",
         sourceCode:"https://github.com/JosephChuksN/E-folio"
     },
