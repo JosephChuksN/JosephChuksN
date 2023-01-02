@@ -1,5 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react'
 import { ProjectInterface } from '../interfaces/projectDataInterface'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
@@ -42,8 +45,14 @@ useEffect(()=>{
         </span>
         </div>
         <span className="text-white font-headers flex gap-5">
-          <a href={data.liveSite}  target="_blank" rel="noopener noreferrer" className={`${data.liveSite ? "block" : "hidden"} p-1 bg-[#F78D26]/70 hover:bg-[#F78D26] text-gray-50 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out  hover:scale-90`}><span >View Live</span></a>
-          <a href={data.sourceCode}  target="_blank" rel="noopener noreferrer" className=" p-1 bg-[#F78D26]/70 hover:bg-[#F78D26] text-gray-50 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out  hover:scale-90"><span >Source Code</span></a>
+          <a href={data.liveSite}  target="_blank" rel="noopener noreferrer" className={`${data.liveSite ? "block" : "hidden"} flex gap-2 px-1.5 py-2 items-center justify-center bg-[#F78D26]/70 hover:bg-[#F78D26] text-gray-50 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out  hover:scale-90`}>
+            <span >View Live</span>
+            <FontAwesomeIcon icon={faEye} />
+          </a>
+          <a href={data.sourceCode}  target="_blank" rel="noopener noreferrer" className="flex gap-2 items-center justify-center px-1.5 py-2 bg-[#F78D26]/70 hover:bg-[#F78D26] text-gray-50 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out  hover:scale-90">
+            <span >Source Code</span> 
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
         </span>
     </div>
   
