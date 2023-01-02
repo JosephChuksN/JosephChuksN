@@ -1,5 +1,6 @@
 import React from 'react'
 import chukwudi from  '../assets/chukwudi.jpg'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Slide } from 'react-awesome-reveal'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
@@ -22,17 +23,26 @@ const About:React.FC = () => {
     <Slide damping={0.3} direction="left" triggerOnce={true}>
     <div className="flex flex-col gap-5 lg:w-4/5 ">
     <span className="text-gray-300 text-base font-para ">
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Nullam sed congue nisl. Proin libero nibh, 
-     posuere nec ante non, varius aliquet ipsum. Mauris dignissim neque risus, vitae 
-     fermentum tortor consectetur eget. Quisque neque ante, pharetra at varius et, 
-     commodo finibus diam. Proin sed blandit turpis
+    Hi, my name is Joseph Nwosu, I am a highly motivated and 
+    progress-focused Front-end developer with over 2 
+    years of experience in web development and also a tech 
+    enthusiast who is eager to learn and solve problems in 
+    anything relating to the tech ecosystem. I enjoy collective 
+    brainstorming sessions which allow me to coordinate activities 
+    to achieve a common goal.Check out some of the things I built in my  
+    <strong className="font-semibold text-[#F78D26] px-1.5">
+       projects
+    </strong> 
+     section
     </span>
-    <span className="text-gray-300 text-base font-para ">
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Nullam sed congue nisl. Proin libero nibh, 
-     posuere nec ante non, varius aliquet ipsum. Mauris dignissim neque risus, vitae 
-     fermentum tortor consectetur eget turpis.
+    <span className="text-gray-300 text-base font-para">
+    I am open and prepared to take on job opportunities and internship positions
+     where I can contribute, improve, master, and add value. If you have a review of a fine opening that 
+     corresponds to my skills and experience don't hold back to 
+     <strong className="font-semibold text-[#F78D26] px-1.5">
+      contact
+    </strong>
+       me.
     </span>
     <a href="https://github.com/JosephChuksN"  target="_blank" rel="noopener noreferrer">
     <span className="flex items-center gap-3 text-[#F78D26] font-headers hover:scale-75 transition-all delay-100 duration-300 cursor-pointer w-36">

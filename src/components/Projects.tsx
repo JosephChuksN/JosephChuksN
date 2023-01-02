@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectData from './ProjectData'
 import { projectDatas } from '../projectData'
-import { Slide } from 'react-awesome-reveal'
+
 
 const Projects:React.FC = () => {
 
