@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import chukwudi from  '../assets/chukwudi.jpg'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -6,9 +6,15 @@ import { Slide } from 'react-awesome-reveal'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 
+
+
+
 const About:React.FC = () => {
 
+  const skills:string[] = ["JavaScript","React","TypeScript", "Git", "Github", "HTML5", "Css3", "Sass",  "Tailwind", "Firebase", ]
+
    
+
 
   return (
     <div className="flex flex-col  gap-10 md:w-3/5 mx-auto px-5 md:px-0 translate-y-20">
@@ -52,16 +58,9 @@ const About:React.FC = () => {
     <span className="text-gray-300 flex flex-col gap-3">
     <span className="font-headers text-lg text-[#F78D26]">My skills:</span>
     <div className="flex flex-wrap gap-3 font-para lg:w-3/5 items-center">
-    <span className="rounded-md bg-[#00000082] text-gray-50 py-1.5 px-3 text-base">JavaScript</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">React</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">TypeScript</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">Git</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">Github</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">Firebase</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">Sass</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">Html5</span>
-    <span className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base" >Css3</span>
-    <span  className="rounded-md bg-[#00000082] text-gray-50  py-1.5 px-3 text-base">TailwindCss</span>
+      {skills.map(skill =>(
+        <span key={skill} className="rounded-md bg-[#00000082] text-gray-50 py-1.5 px-3 text-base">{skill}</span>
+      ))}
   </div>
     </span>
     </div>
