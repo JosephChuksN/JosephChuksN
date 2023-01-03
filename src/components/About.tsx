@@ -1,8 +1,9 @@
 import React from 'react'
 import chukwudi from  '../assets/chukwudi.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Slide } from 'react-awesome-reveal'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
@@ -52,7 +53,7 @@ const About:React.FC = () => {
     <a href="https://github.com/JosephChuksN"  target="_blank" rel="noopener noreferrer">
     <span className="flex items-center gap-3 text-[#F78D26] font-headers hover:scale-75 transition-all delay-100 duration-300 cursor-pointer w-36">
       View Github 
-      <FontAwesomeIcon icon={faLink} />
+      <FontAwesomeIcon className="text-white text-base" icon={ faGithub} />
       </span></a>
     <span className="text-gray-300 flex flex-col gap-3">
     <span className="font-headers text-lg text-[#F78D26]">My skills:</span>
