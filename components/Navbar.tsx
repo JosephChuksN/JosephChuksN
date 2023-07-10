@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react'
+import  { FC } from 'react'
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
@@ -13,7 +13,7 @@ import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-const Navbar:React.FC = () => {
+const Navbar:FC = () => {
 
    const pathname = usePathname()
    const activeItem:string = "text-[#F78D26] scale-75 transition-all delay-75 duration-300 ease-in-out"

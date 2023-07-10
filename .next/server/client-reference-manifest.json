@@ -40,14 +40,6 @@
         "async": false
       }
     },
-    "(app-client)/./app/page.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/page.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./components/SocailNetworks.tsx": {
       "*": {
         "id": "(sc_client)/./components/SocailNetworks.tsx",
@@ -59,6 +51,70 @@
     "(app-client)/./components/Navbar.tsx": {
       "*": {
         "id": "(sc_client)/./components/Navbar.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/Home.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/Home.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/About.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/About.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/efolio.png": {
+      "*": {
+        "id": "(sc_client)/./assets/efolio.png",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/linkpath-2.png": {
+      "*": {
+        "id": "(sc_client)/./assets/linkpath-2.png",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/weatherapp.png": {
+      "*": {
+        "id": "(sc_client)/./assets/weatherapp.png",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/api.png": {
+      "*": {
+        "id": "(sc_client)/./assets/api.png",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ProjectData.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ProjectData.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/Contact.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/Contact.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -147,16 +203,16 @@
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\page.tsx": {
-      "id": "(app-client)/./app/page.tsx",
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\SocailNetworks.tsx": {
+      "id": "(app-client)/./components/SocailNetworks.tsx",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\SocailNetworks.tsx": {
-      "id": "(app-client)/./components/SocailNetworks.tsx",
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Navbar.tsx": {
+      "id": "(app-client)/./components/Navbar.tsx",
       "name": "*",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
@@ -171,19 +227,78 @@
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Navbar.tsx": {
-      "id": "(app-client)/./components/Navbar.tsx",
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Home.tsx": {
+      "id": "(app-client)/./components/Home.tsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\About.tsx": {
+      "id": "(app-client)/./components/About.tsx",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\efolio.png": {
+      "id": "(app-client)/./assets/efolio.png",
+      "name": "*",
+      "chunks": [
+        "app/projects/page:static/chunks/app/projects/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\linkpath-2.png": {
+      "id": "(app-client)/./assets/linkpath-2.png",
+      "name": "*",
+      "chunks": [
+        "app/projects/page:static/chunks/app/projects/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\weatherapp.png": {
+      "id": "(app-client)/./assets/weatherapp.png",
+      "name": "*",
+      "chunks": [
+        "app/projects/page:static/chunks/app/projects/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\api.png": {
+      "id": "(app-client)/./assets/api.png",
+      "name": "*",
+      "chunks": [
+        "app/projects/page:static/chunks/app/projects/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\ProjectData.tsx": {
+      "id": "(app-client)/./components/ProjectData.tsx",
+      "name": "*",
+      "chunks": [
+        "app/projects/page:static/chunks/app/projects/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Contact.tsx": {
+      "id": "(app-client)/./components/Contact.tsx",
+      "name": "*",
+      "chunks": [
+        "app/contact/page:static/chunks/app/contact/page.js"
       ],
       "async": false
     }
   },
   "entryCSSFiles": {
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\page": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\layout": [
       "static/css/app/layout.css"
-    ]
+    ],
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\page": [],
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\about\\page": [],
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\projects\\page": [],
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\contact\\page": []
   }
 }

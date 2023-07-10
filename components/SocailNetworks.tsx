@@ -1,11 +1,11 @@
 "use client"
 
-import React from 'react'
+import React, { FC } from 'react'
 import {Fade} from 'react-awesome-reveal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import{ faGithub, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-const SocailNetworks:React.FC = () => {
+const SocailNetworks:FC = () => {
   return (
     <div>
            <span className="fixed flex flex-row lg:flex-col lg:left-14 bottom-0 gap-8 py-4 lg:py-0 w-full lg:w-10 left-0 px-3 bg-[#ffffff06] backdrop-blur-sm lg:bg-transparent z-10  lg:gap-7 text-white text-base lg:text-lg">
