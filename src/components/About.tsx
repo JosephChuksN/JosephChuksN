@@ -45,7 +45,7 @@ const About:React.FC = () => {
     I am open and prepared to take on job opportunities and internship positions
      where I can contribute, improve, master, and add value. If you have a review of a fine opening that 
      corresponds to my skills and experience don't hold back to 
-     <strong className="font-semibold text-[#F78D26] px-1.5">
+     <strong className="font-semibold text-[#F78D26] px-1.5 text-md">
       contact
     </strong>
        me.
