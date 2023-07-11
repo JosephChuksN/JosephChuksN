@@ -1,7 +1,7 @@
 "use client"
 
 import { FC, useState, useEffect, useRef } from 'react'
-import { ProjectInterface } from '../interfaces/projectDataInterface'
+import { ProjectInterface } from '@interfaces/projectDataInterface'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

@@ -4,16 +4,16 @@ import chuksdev from '@assets/Chuksdev.jpg'
 import Image from 'next/image'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { skills } from '@skills'
 
 
 
 
 const About:FC = () => {
 
-  const skills:string[] = ["JavaScript","NextJs", "React","TypeScript", "Git", "Github", "HTML5", "Css3", "Sass",  "Tailwind", "Firebase", "Jira", "MongoDb" ]
+  
 
-   
-
+  
 
   return (
     <div className="flex flex-col  gap-10 md:w-3/5 mx-auto px-5 md:px-0 translate-y-10">
@@ -57,7 +57,15 @@ const About:FC = () => {
     <span className="font-headers text-lg text-[#F78D26]">My skills:</span>
     <div className="flex flex-wrap gap-3 font-para lg:w-full items-center ">
       {skills.map(skill =>(
-        <span key={skill} className="rounded-md bg-[#00000082] text-gray-50 py-2 px-3 text-base">{skill}</span>
+
+        <span key={skill.name} className=" flex items-center gap-3 rounded-md bg-[#00000082] text-gray-50 py-2 px-3 text-base">
+          <Image  src={skill.icon} alt='skill logo' 
+          width={30}
+          height={30}
+          className="rounded-sm"
+          />
+          <span>{skill.name}</span>
+        </span>
       ))}
   </div>
     </span>

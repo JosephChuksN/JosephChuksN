@@ -40,22 +40,6 @@
         "async": false
       }
     },
-    "(app-client)/./components/SocailNetworks.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/SocailNetworks.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/Navbar.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/Navbar.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
@@ -75,6 +59,110 @@
     "(app-client)/./assets/Chuksdev.jpg": {
       "*": {
         "id": "(sc_client)/./assets/Chuksdev.jpg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/html-5.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/html-5.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/react.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/react.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/firebase.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/firebase.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/next.js (1).svg": {
+      "*": {
+        "id": "(sc_client)/./assets/next.js (1).svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/javascript.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/javascript.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/typescript.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/typescript.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/tailwindcss.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/tailwindcss.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/git.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/git.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/github.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/github.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/css3.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/css3.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/mongodb.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/mongodb.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/jira.svg": {
+      "*": {
+        "id": "(sc_client)/./assets/jira.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ProjectData.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ProjectData.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -112,17 +200,25 @@
         "async": false
       }
     },
-    "(app-client)/./components/ProjectData.tsx": {
+    "(app-client)/./components/ContactForm.tsx": {
       "*": {
-        "id": "(sc_client)/./components/ProjectData.tsx",
+        "id": "(sc_client)/./components/ContactForm.tsx",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./components/ContactForm.tsx": {
+    "(app-client)/./components/Navbar.tsx": {
       "*": {
-        "id": "(sc_client)/./components/ContactForm.tsx",
+        "id": "(sc_client)/./components/Navbar.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/SocailNetworks.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/SocailNetworks.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -211,30 +307,6 @@
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\SocailNetworks.tsx": {
-      "id": "(app-client)/./components/SocailNetworks.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Navbar.tsx": {
-      "id": "(app-client)/./components/Navbar.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\styles\\globals.css": {
-      "id": "(app-client)/./styles/globals.css",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\client\\link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
@@ -275,6 +347,110 @@
       ],
       "async": false
     },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\html-5.svg": {
+      "id": "(app-client)/./assets/html-5.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\react.svg": {
+      "id": "(app-client)/./assets/react.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\firebase.svg": {
+      "id": "(app-client)/./assets/firebase.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\next.js (1).svg": {
+      "id": "(app-client)/./assets/next.js (1).svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\javascript.svg": {
+      "id": "(app-client)/./assets/javascript.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\typescript.svg": {
+      "id": "(app-client)/./assets/typescript.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\tailwindcss.svg": {
+      "id": "(app-client)/./assets/tailwindcss.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\git.svg": {
+      "id": "(app-client)/./assets/git.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\github.svg": {
+      "id": "(app-client)/./assets/github.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\css3.svg": {
+      "id": "(app-client)/./assets/css3.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\mongodb.svg": {
+      "id": "(app-client)/./assets/mongodb.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\jira.svg": {
+      "id": "(app-client)/./assets/jira.svg",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\ProjectData.tsx": {
+      "id": "(app-client)/./components/ProjectData.tsx",
+      "name": "*",
+      "chunks": [
+        "app/projects/page:static/chunks/app/projects/page.js"
+      ],
+      "async": false
+    },
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\efolio.png": {
       "id": "(app-client)/./assets/efolio.png",
       "name": "*",
@@ -307,14 +483,6 @@
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\ProjectData.tsx": {
-      "id": "(app-client)/./components/ProjectData.tsx",
-      "name": "*",
-      "chunks": [
-        "app/projects/page:static/chunks/app/projects/page.js"
-      ],
-      "async": false
-    },
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\ContactForm.tsx": {
       "id": "(app-client)/./components/ContactForm.tsx",
       "name": "*",
@@ -322,16 +490,40 @@
         "app/contact/page:static/chunks/app/contact/page.js"
       ],
       "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Navbar.tsx": {
+      "id": "(app-client)/./components/Navbar.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\SocailNetworks.tsx": {
+      "id": "(app-client)/./components/SocailNetworks.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\styles\\globals.css": {
+      "id": "(app-client)/./styles/globals.css",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\layout": [
-      "static/css/app/layout.css"
-    ],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\page": [],
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\loading": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\about\\page": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\projects\\page": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\contact\\page": [],
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\loading": []
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\layout": [
+      "static/css/app/layout.css"
+    ]
   }
 }
