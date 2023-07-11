@@ -1,12 +1,15 @@
-import './globals.css'
+import '@styles/globals.css'
 import SocailNetworks from '../components/SocailNetworks'
 import Navbar from '../components/Navbar'
+import { Metadata } from 'next'
 
 
-export const metadata = {
-  title: 'Joseph Nwosu',
-  description: 'Frontend Developer',
+export const metadata:Metadata = {
+  title: 'Joseph Nwosu | Porfolio',
+  description: 'I am a front-end software engineer proficient in JavaScript, Next, React, and TypeScript',
+  
 }
+
 
 export default function RootLayout({
   children,
@@ -15,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel='icon' href='/portfoliologo.ico' />
       <body>
         <Navbar />
         {children}

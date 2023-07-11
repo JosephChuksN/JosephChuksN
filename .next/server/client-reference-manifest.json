@@ -56,17 +56,25 @@
         "async": false
       }
     },
-    "(app-client)/./components/Home.tsx": {
+    "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
-        "id": "(sc_client)/./components/Home.tsx",
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./components/About.tsx": {
+    "(app-client)/./node_modules/next/dist/client/image-component.js": {
       "*": {
-        "id": "(sc_client)/./components/About.tsx",
+        "id": "(sc_client)/./node_modules/next/dist/client/image-component.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./assets/Chuksdev.jpg": {
+      "*": {
+        "id": "(sc_client)/./assets/Chuksdev.jpg",
         "name": "*",
         "chunks": [],
         "async": false
@@ -112,9 +120,9 @@
         "async": false
       }
     },
-    "(app-client)/./components/Contact.tsx": {
+    "(app-client)/./components/ContactForm.tsx": {
       "*": {
-        "id": "(sc_client)/./components/Contact.tsx",
+        "id": "(sc_client)/./components/ContactForm.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -219,24 +227,48 @@
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\globals.css": {
-      "id": "(app-client)/./app/globals.css",
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\styles\\globals.css": {
+      "id": "(app-client)/./styles/globals.css",
       "name": "*",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Home.tsx": {
-      "id": "(app-client)/./components/Home.tsx",
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\About.tsx": {
-      "id": "(app-client)/./components/About.tsx",
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\esm\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\client\\image-component.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\esm\\client\\image-component.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\Chuksdev.jpg": {
+      "id": "(app-client)/./assets/Chuksdev.jpg",
       "name": "*",
       "chunks": [
         "app/about/page:static/chunks/app/about/page.js"
@@ -283,8 +315,8 @@
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Contact.tsx": {
-      "id": "(app-client)/./components/Contact.tsx",
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\ContactForm.tsx": {
+      "id": "(app-client)/./components/ContactForm.tsx",
       "name": "*",
       "chunks": [
         "app/contact/page:static/chunks/app/contact/page.js"
@@ -299,6 +331,7 @@
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\page": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\about\\page": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\projects\\page": [],
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\contact\\page": []
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\contact\\page": [],
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\loading": []
   }
 }

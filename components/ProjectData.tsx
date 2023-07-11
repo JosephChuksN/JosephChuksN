@@ -14,26 +14,28 @@ interface props {
 }
 
 const ProjectData:FC<props> = ({data}) => {
-// const [hover, setHover]= useState<boolean>(false)
-// const image = useRef<null | HTMLSpanElement>(null)
-// const ImageNode = image.current
+const [hover, setHover]= useState<boolean>(false)
+const image = useRef<null | HTMLSpanElement>(null)
+const ImageNode = image.current
 
 
-// useEffect(()=>{
+useEffect(()=>{
  
-//   const handleHoverEvent = ():void=>{
-//     setHover(!hover)
-//   }
-//   ImageNode?.addEventListener("mouseover", handleHoverEvent )
-//   return () => {
-//     ImageNode?.removeEventListener("mouseover", handleHoverEvent)
-//   }
-// },[hover, ImageNode])
+  const handleHoverEvent = ():void=>{
+    setHover(!hover)
+  }
+  ImageNode?.addEventListener("mouseover", handleHoverEvent )
+  return () => {
+    ImageNode?.removeEventListener("mouseover", handleHoverEvent)
+  }
+},[hover, ImageNode])
 
   return (
-    <div key={data.name} className="w-full h-full  flex flex-col lg:flex-row items-center justify-center lg:pb-5 p-1 pb-16 ">
+    <div key={data.name} className="w-full h-full  flex flex-col lg:flex-row items-center justify-center lg:pb-5 p-1 pb-16 lg:mb-14 ">
       
-     <Image data-aos="zoom-in-down" src={data.image} alt='project image' className={`flex opacity-70  w-full h-[300px] lg:h-[55vh] rounded-l-md  bg-no-repeat bg-cover `} />
+    <span ref={image} className={`flex opacity-70  w-full h-[300px] lg:h-[55vh] rounded-l-md  bg-no-repeat bg-cover `}>
+    <Image  priority={true}  data-aos="zoom-in-down" src={data.image} alt='project image'  />
+    </span>
     
      
      <div data-aos="zoom-out-up"  className="flex gap-5   flex-col   h-full lg:h-[55vh]  justify-center  w-full  bg-[#000000b5]  lg:bg-gradient-to-l from-[#0c0f11] to-[#0d1114] py-3  px-2  lg:px-8  shadow-xl shadow-[#00000082] rounded-r-md">
