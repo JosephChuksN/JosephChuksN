@@ -40,17 +40,25 @@
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/dist/client/link.js": {
+    "(app-client)/./components/SocailNetworks.tsx": {
       "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "id": "(sc_client)/./components/SocailNetworks.tsx",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/dist/client/image-component.js": {
+    "(app-client)/./components/Navbar.tsx": {
       "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image-component.js",
+        "id": "(sc_client)/./components/Navbar.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -160,9 +168,9 @@
         "async": false
       }
     },
-    "(app-client)/./components/ProjectData.tsx": {
+    "(app-client)/./node_modules/next/dist/client/image-component.js": {
       "*": {
-        "id": "(sc_client)/./components/ProjectData.tsx",
+        "id": "(sc_client)/./node_modules/next/dist/client/image-component.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -200,25 +208,17 @@
         "async": false
       }
     },
+    "(app-client)/./components/ProjectData.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ProjectData.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./components/ContactForm.tsx": {
       "*": {
         "id": "(sc_client)/./components/ContactForm.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/Navbar.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/Navbar.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/SocailNetworks.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/SocailNetworks.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -307,6 +307,30 @@
       ],
       "async": false
     },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\SocailNetworks.tsx": {
+      "id": "(app-client)/./components/SocailNetworks.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Navbar.tsx": {
+      "id": "(app-client)/./components/Navbar.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\styles\\globals.css": {
+      "id": "(app-client)/./styles/globals.css",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\client\\link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
@@ -317,22 +341,6 @@
     },
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\esm\\client\\link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/about/page:static/chunks/app/about/page.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\client\\image-component.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
-      "name": "*",
-      "chunks": [
-        "app/about/page:static/chunks/app/about/page.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\esm\\client\\image-component.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
         "app/about/page:static/chunks/app/about/page.js"
@@ -443,11 +451,19 @@
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\ProjectData.tsx": {
-      "id": "(app-client)/./components/ProjectData.tsx",
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\client\\image-component.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/projects/page:static/chunks/app/projects/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\esm\\client\\image-component.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
@@ -483,6 +499,14 @@
       ],
       "async": false
     },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\ProjectData.tsx": {
+      "id": "(app-client)/./components/ProjectData.tsx",
+      "name": "*",
+      "chunks": [
+        "app/projects/page:static/chunks/app/projects/page.js"
+      ],
+      "async": false
+    },
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\ContactForm.tsx": {
       "id": "(app-client)/./components/ContactForm.tsx",
       "name": "*",
@@ -490,40 +514,16 @@
         "app/contact/page:static/chunks/app/contact/page.js"
       ],
       "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Navbar.tsx": {
-      "id": "(app-client)/./components/Navbar.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\SocailNetworks.tsx": {
-      "id": "(app-client)/./components/SocailNetworks.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\styles\\globals.css": {
-      "id": "(app-client)/./styles/globals.css",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
     }
   },
   "entryCSSFiles": {
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\layout": [
+      "static/css/app/layout.css"
+    ],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\page": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\loading": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\about\\page": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\projects\\page": [],
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\contact\\page": [],
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\layout": [
-      "static/css/app/layout.css"
-    ]
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\contact\\page": []
   }
 }
