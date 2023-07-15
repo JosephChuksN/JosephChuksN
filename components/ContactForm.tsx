@@ -7,7 +7,7 @@ const ContactForm:FC = () => {
    const [email, setEmail] = useState<string>("")
    const [message, setMessage] = useState<string>("")
 
-
+   console.log("go")
 
   return (
     

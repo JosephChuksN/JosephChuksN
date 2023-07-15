@@ -5,6 +5,7 @@ import ContactForm from '../../components/ContactForm'
 
 const ContactPage:FC = () =>{
 
+   
     return (
  <div className="flex flex-col  gap-10 md:w-3/5 mx-auto px-5 md:px-0  translate-y-10 pb-14">
     <span className="text-4xl text-white font-semibold font-headers flex gap-1 mb-3 ">
