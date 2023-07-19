@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel='icon' href='/portfoliologo.ico' />
-      <body>
+      <body className="min-h-[100vh]">
         <Navbar />
         {children}
         <SocailNetworks />
