@@ -1,10 +1,16 @@
-import { FC } from 'react'
 import ProjectData from '../../components/ProjectData'
-import { projectDatas } from '../../projectData'
+import { ProjectInterface } from '@interfaces/projectDataInterface'
+import { db } from '@firebaseConfig'
+import { doc, getDoc } from 'firebase/firestore'
 
 
-const Projects:FC = () => {
+const Projects = async (): Promise<JSX.Element> => {
 
+
+  const docRef = doc(db, "Projects", "ZjIPKomQGW992tlgadgN")
+  
+  const docSnap = await getDoc(docRef)
+  const projects = docSnap!.data()!.Projects
 
 
   return (
@@ -14,7 +20,7 @@ const Projects:FC = () => {
     Projects 
     <span className="text-[#F78D26]">{`}`}</span>
     </span>
-   {projectDatas.map(data=>(
+   {projects.map((data: ProjectInterface)=>(
       <ProjectData 
       key={data.name}
        data={data}

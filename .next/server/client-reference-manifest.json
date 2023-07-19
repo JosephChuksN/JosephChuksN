@@ -56,9 +56,33 @@
         "async": false
       }
     },
+    "(app-client)/./components/Home.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/Home.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ProjectData.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ProjectData.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/image-component.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image-component.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -168,49 +192,17 @@
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/dist/client/image-component.js": {
+    "(app-client)/./assets/npm.svg": {
       "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image-component.js",
+        "id": "(sc_client)/./assets/npm.svg",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./assets/efolio.png": {
+    "(app-client)/./assets/getpostman-icon.svg": {
       "*": {
-        "id": "(sc_client)/./assets/efolio.png",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./assets/linkpath-2.png": {
-      "*": {
-        "id": "(sc_client)/./assets/linkpath-2.png",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./assets/weatherapp.png": {
-      "*": {
-        "id": "(sc_client)/./assets/weatherapp.png",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./assets/api.png": {
-      "*": {
-        "id": "(sc_client)/./assets/api.png",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/ProjectData.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/ProjectData.tsx",
+        "id": "(sc_client)/./assets/getpostman-icon.svg",
         "name": "*",
         "chunks": [],
         "async": false
@@ -331,6 +323,22 @@
       ],
       "async": false
     },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\Home.tsx": {
+      "id": "(app-client)/./components/Home.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\ProjectData.tsx": {
+      "id": "(app-client)/./components/ProjectData.tsx",
+      "name": "*",
+      "chunks": [
+        "app/projects/page:static/chunks/app/projects/page.js"
+      ],
+      "async": false
+    },
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\client\\link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
@@ -341,6 +349,22 @@
     },
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\esm\\client\\link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\client\\image-component.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\esm\\client\\image-component.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
         "app/about/page:static/chunks/app/about/page.js"
@@ -451,59 +475,19 @@
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\client\\image-component.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\npm.svg": {
+      "id": "(app-client)/./assets/npm.svg",
       "name": "*",
       "chunks": [
         "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\next\\dist\\esm\\client\\image-component.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\getpostman-icon.svg": {
+      "id": "(app-client)/./assets/getpostman-icon.svg",
       "name": "*",
       "chunks": [
         "app/about/page:static/chunks/app/about/page.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\efolio.png": {
-      "id": "(app-client)/./assets/efolio.png",
-      "name": "*",
-      "chunks": [
-        "app/projects/page:static/chunks/app/projects/page.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\linkpath-2.png": {
-      "id": "(app-client)/./assets/linkpath-2.png",
-      "name": "*",
-      "chunks": [
-        "app/projects/page:static/chunks/app/projects/page.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\weatherapp.png": {
-      "id": "(app-client)/./assets/weatherapp.png",
-      "name": "*",
-      "chunks": [
-        "app/projects/page:static/chunks/app/projects/page.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\assets\\api.png": {
-      "id": "(app-client)/./assets/api.png",
-      "name": "*",
-      "chunks": [
-        "app/projects/page:static/chunks/app/projects/page.js"
-      ],
-      "async": false
-    },
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\ProjectData.tsx": {
-      "id": "(app-client)/./components/ProjectData.tsx",
-      "name": "*",
-      "chunks": [
-        "app/projects/page:static/chunks/app/projects/page.js"
       ],
       "async": false
     },
@@ -520,10 +504,11 @@
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\layout": [
       "static/css/app/layout.css"
     ],
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\page": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\loading": [],
-    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\about\\page": [],
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\page": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\projects\\page": [],
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\about\\page": [],
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\projects\\loading": [],
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\app\\contact\\page": []
   }
 }

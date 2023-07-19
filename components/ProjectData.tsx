@@ -6,6 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 
 
@@ -31,10 +32,17 @@ useEffect(()=>{
 },[hover, ImageNode])
 
   return (
+    <motion.div
+     initial={{ opacity: 0 }}
+     whileInView={{ opacity: 10 }}
+     viewport={{ once: true }}
+     transition={{ duration: 1.5 }}
+     exit={{ opacity: 0 }}
+     >
     <div key={data.name} className="w-full h-full  flex flex-col lg:flex-row items-center justify-center lg:pb-5 p-1 pb-16 lg:mb-14 ">
       
     <span ref={image} className={`flex opacity-70  w-full h-[300px] lg:h-[55vh] rounded-l-md  bg-no-repeat bg-cover `}>
-    <Image  priority={true}  data-aos="zoom-in-down" src={data.image} alt='project image'  />
+    <Image  priority={true}  data-aos="zoom-in-down" width={500}  height={500} src={data.image} alt='project image'  />
     </span>
     
      
@@ -44,13 +52,13 @@ useEffect(()=>{
         <div className="flex flex-col w-full gap-3">
           <span className="text-lg lg:text-xl text-[#F78D26] font-headers">Built With:</span>
         <span className="font-headers text-gray-300 text-base lg:text-lg  flex flex-wrap gap-3 items-center  w-full">
-          {data.technologies.map(technologies=>(
+          {data.stack.map(technologies=>(
             <span key={technologies} className="lg:px-1 flex ">{technologies}</span>
           ))}
         </span>
         </div>
         <span className="text-white font-headers flex gap-5">
-          <a href={data.liveSite}  target="_blank" rel="noopener noreferrer" className={`${data.liveSite ? "block" : "hidden"} flex gap-2 px-1.5 py-2 items-center justify-center bg-[#F78D26]/70 hover:bg-[#F78D26] text-gray-50 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out  hover:scale-90`}>
+          <a href={data.livesite}  target="_blank" rel="noopener noreferrer" className={`${data.livesite ? "block" : "hidden"} flex gap-2 px-1.5 py-2 items-center justify-center bg-[#F78D26]/70 hover:bg-[#F78D26] text-gray-50 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out  hover:scale-90`}>
             <span >View Live</span>
             <FontAwesomeIcon icon={faEye} />
           </a>
@@ -63,7 +71,7 @@ useEffect(()=>{
   
     
 </div>
-
+</motion.div>
   )
 }
 

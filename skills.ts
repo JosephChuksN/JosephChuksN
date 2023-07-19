@@ -13,6 +13,8 @@ import GithubSvg from '@assets/github.svg'
 import CssSvg from '@assets/css3.svg'
 import MongoSvg from '@assets/mongodb.svg'
 import JiraSvg from '@assets/jira.svg'
+import Npm from '@assets/npm.svg'
+import Postman from '@assets/getpostman-icon.svg'
 
 
 
@@ -28,5 +30,7 @@ export const skills:SkillsInterface[] = [
      {name:"Firebase", icon:FirebaseSvg},
      {name:"Tailwindcss", icon:TailwindCssSvg},
      {name:"MongoDb", icon:MongoSvg},
+     {name:"Npm", icon:Npm},
      {name:"Jira", icon:JiraSvg},
+     {name:"Postman", icon:Postman}
   ]
