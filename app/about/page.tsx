@@ -71,7 +71,7 @@ const About:FC = () => {
     
     
     <div className=" mx-auto flex items-center p-3 bg-[#F78D26] w-72  h-96 rounded-md relative mb-16 lg:mb-auto">
-    <Image priority={true} src={chuksdev} alt='photo' width={0} height={0}  style={{ width: '100%', height: '100%' }}
+    <Image priority src={chuksdev} alt='photo' width={0} height={0}  style={{ width: '100%', height: '100%' }}
         className= 'hover:bottom-0 hover:right-0  transition-all delay-75 duration-300 ease-in-out flex items-center rounded-md absolute bottom-3 right-3'
         />
     

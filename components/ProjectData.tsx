@@ -42,7 +42,7 @@ useEffect(()=>{
     <div key={data.name} className="w-full h-full  flex flex-col lg:flex-row items-center justify-center lg:pb-5 p-1 pb-16 lg:mb-14 ">
       
     <span ref={image} className={`flex opacity-70  w-full h-[300px] lg:h-[55vh] rounded-l-md  bg-no-repeat bg-cover `}>
-    <Image  priority={true}  data-aos="zoom-in-down" width={500}  height={500} src={data.image} alt='project image'  />
+    <Image  priority  data-aos="zoom-in-down" width={500}  height={500} src={data.image} alt='project image'  />
     </span>
     
      
