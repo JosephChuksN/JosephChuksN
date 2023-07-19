@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+
+html{
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow: auto;
+}
+
+body{
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #0d1114 0%, #0c0f11 74%);
+    
+    
+   
+}
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #D1D5DB #0d1114;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #0d1114;
+    
+    
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #979b9f;
+    border-radius: 14px;
+    
+  }
