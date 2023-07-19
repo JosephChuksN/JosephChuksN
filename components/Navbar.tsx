@@ -81,7 +81,7 @@ const Navbar:FC = () => {
 
 
   return (
-    <nav  className={`sticky shadow-[#00000082] ${scrollDirection === "down"? "-translate-y-full" : "top-0 backdrop-blur-lg "} transition-all delay-75 duration-500 ease-in-out w-full py-4 md:py-8 font-headers text-white z-50 `}>
+    <div  className={`sticky shadow-[#00000082] ${scrollDirection === "down"? "-translate-y-full" : "top-0 backdrop-blur-lg "} transition-all delay-75 duration-500 ease-in-out w-full py-4 md:py-8 font-headers text-white z-50 `}>
     <div className=" flex justify-between items-center px-5 lg:px-56 relative">
       <Link href='/' className="flex items-center gap-5 text-md">
         <Image priority={true} className=" flex items-center justify-center   w-12 h-12  " src={portfoliologo} alt="logo" />
@@ -119,7 +119,7 @@ const Navbar:FC = () => {
       
        
     </div>
-    </nav>
+    </div>
   )
 }
 
