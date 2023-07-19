@@ -6,7 +6,11 @@ import { Metadata } from 'next'
 
 export const metadata:Metadata = {
   title: 'Joseph Nwosu | Porfolio',
-  description: 'I am a front-end software engineer proficient in JavaScript, Nextjs, React, and TypeScript',
+  description: `Joseph is an analytical and reliable Frontend engineer with 
+  solid experience in frontend software engineering, and backend software engineering. 
+  Exhaustive knowledge of development, production, testing, and maintenance of frontend 
+  software systems to build frontend systems, provide systems support, identify technical 
+  issues, and collaborate with multi-function teams.`
   
 }
 
