@@ -2,6 +2,7 @@ import '@styles/globals.css'
 import SocailNetworks from '../components/SocailNetworks'
 import Navbar from '../components/Navbar'
 import { Metadata } from 'next'
+import 'aos/dist/aos.css';
 
 
 export const metadata:Metadata = {

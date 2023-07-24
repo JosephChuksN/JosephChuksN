@@ -6,7 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion, useTransform, useScroll } from 'framer-motion'
 
 
 
@@ -32,7 +32,7 @@ useEffect(()=>{
 },[hover, ImageNode])
 
   return (
-    <motion.div
+    <motion.div 
      initial={{ opacity: 0 }}
      whileInView={{ opacity: 10 }}
      viewport={{ once: true }}
@@ -42,11 +42,11 @@ useEffect(()=>{
     <div key={data.name} className="w-full h-full  flex flex-col lg:flex-row items-center justify-center lg:pb-5 p-1 pb-16 lg:mb-14 ">
       
     <span ref={image} className={`flex opacity-70  w-full h-[300px] lg:h-[55vh] rounded-l-md  bg-no-repeat bg-cover `}>
-    <Image  priority  data-aos="zoom-in-down" width={500}  height={500} src={data.image} alt='project image'  />
+    <Image  priority  width={500}  height={500} src={data.image} alt='project image'  />
     </span>
     
      
-     <div data-aos="zoom-out-up"  className="flex gap-5   flex-col   h-full lg:h-[55vh]  justify-center  w-full  bg-[#000000b5]  lg:bg-gradient-to-l from-[#0c0f11] to-[#0d1114] py-3  px-2  lg:px-8  shadow-xl shadow-[#00000082] rounded-r-md">
+     <div  className="flex gap-5   flex-col   h-full lg:h-[55vh]  justify-center  w-full  bg-[#000000b5]  lg:bg-gradient-to-l from-[#0c0f11] to-[#0d1114] py-3  px-2  lg:px-8  shadow-xl shadow-[#00000082] rounded-r-md">
       <span className="text-[#F78D26] text-lg lg:text-3xl font-headers">{data.name}</span>
       <span className="text-gray-300 font-para text-base lg:text-lg">{data.description}</span>
         <div className="flex flex-col w-full gap-3">

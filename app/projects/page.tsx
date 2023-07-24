@@ -1,7 +1,7 @@
 import ProjectData from '../../components/ProjectData'
 import { ProjectInterface } from '@interfaces/projectDataInterface'
 import { db } from '@firebaseConfig'
-import { doc, getDoc, onSnapshot } from 'firebase/firestore'
+import { doc, getDoc } from 'firebase/firestore'
 
 
 const Projects = async (): Promise<JSX.Element> => {
