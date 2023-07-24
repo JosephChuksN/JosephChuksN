@@ -6,5 +6,5 @@ export interface ProjectInterface {
  stack:string[]
  image:string
  livesite:string
- sourceCode:string
+ source:string
 }

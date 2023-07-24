@@ -62,7 +62,7 @@ useEffect(()=>{
             <span >View Live</span>
             <FontAwesomeIcon icon={faEye} />
           </a>
-          <a href={data.sourceCode}  target="_blank" rel="noopener noreferrer" className="flex gap-2 items-center justify-center px-1.5 py-2 bg-[#F78D26]/70 hover:bg-[#F78D26] text-gray-50 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out  hover:scale-90">
+          <a href={data.source}  target="_blank" rel="noopener noreferrer" className="flex gap-2 items-center justify-center px-1.5 py-2 bg-[#F78D26]/70 hover:bg-[#F78D26] text-gray-50 font-para rounded-md cursor-pointer text-base transition-all duration-300 delay-75 ease-in-out  hover:scale-90">
             <span >Source Code</span> 
             <FontAwesomeIcon icon={faGithub} />
           </a>
