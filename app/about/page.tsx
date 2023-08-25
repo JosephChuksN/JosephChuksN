@@ -16,11 +16,7 @@ const About:FC = () => {
   return (
     <div className="flex flex-col pb-10 gap-10 md:w-3/5 mx-auto px-5 md:px-0 translate-y-10">
         
-    <span className="text-4xl text-white font-semibold font-headers flex gap-1">
-    <span className="text-[#F78D26]">{`{`}</span> 
-    About Me 
-    <span className="text-[#F78D26]">{`}`}</span>
-    </span>
+    <span className="text-4xl text-white font-semibold font-headers flex gap-1">About Me </span>
     
     <div className="flex flex-col lg:flex-row w-full lg:gap-0 gap-14 content-start">
     
@@ -71,7 +67,7 @@ const About:FC = () => {
     
     
     <div className=" mx-auto flex items-center p-3 bg-[#F78D26] w-72  h-96 rounded-md relative mb-16 lg:mb-auto">
-    <Image priority={true} src={chuksdev} alt='photo' width={0} height={0}  style={{ width: '100%', height: '100%' }}
+    <Image priority src={chuksdev} alt='photo' width={0} height={0}  style={{ width: '100%', height: '100%' }}
         className= 'hover:bottom-0 hover:right-0  transition-all delay-75 duration-300 ease-in-out flex items-center rounded-md absolute bottom-3 right-3'
         />
     

@@ -28,7 +28,7 @@ const Home:FC = () => {
       helping buisnesses and individuals implement manual processes into computerised refined 
       Websites.
     </span>
-    <span className="text-gray-300 font-headers flex gap-5 items-center cursor-pointer">
+    <span className="text-gray-300 font-headers flex gap-5 text-lg items-center cursor-pointer">
       See More 
       <span className="text-3xl transition-all delay-100 duration-200 ease-in-out text-[#F78D26] hover:scale-125 hover:translate-x-3 ">
       <Link href="/about"><BsArrowRight /></Link>

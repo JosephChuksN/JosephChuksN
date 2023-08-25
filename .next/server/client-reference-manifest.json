@@ -163,6 +163,14 @@
       ],
       "async": false
     },
+    "D:\\new project\\mainPortfolio\\Portfolio1.0\\node_modules\\aos\\dist\\aos.css": {
+      "id": "(app-client)/./node_modules/aos/dist/aos.css",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
     "D:\\new project\\mainPortfolio\\Portfolio1.0\\components\\SocailNetworks.tsx": {
       "id": "(app-client)/./components/SocailNetworks.tsx",
       "name": "*",
