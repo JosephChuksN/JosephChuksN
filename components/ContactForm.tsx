@@ -69,7 +69,13 @@ const ContactForm: FC<props> = ({
       >
         {loading ? (
           <span className="flex items-center gap-3">
-            <Image src={loadingGif} alt="loading" width={20} height={20} />
+            <Image 
+            src={loadingGif} 
+            alt="loading" 
+            width={20} 
+            height={20} 
+            priority={true}
+            />
             sending...
           </span>
         ) : (
