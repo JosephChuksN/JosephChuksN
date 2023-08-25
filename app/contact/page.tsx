@@ -1,9 +1,43 @@
-import { FC } from 'react'
+"use client"
+
+import { FC, useState } from 'react'
 import ContactForm from '../../components/ContactForm'
+import { showToast } from "react-next-toast";
 
 
 
 const ContactPage:FC = () =>{
+    const [name, setName] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
+    const [message, setMessage] = useState<string>("");
+    const [loading, setLoading] = useState<boolean>(false)
+
+     const data = { name, email, message };
+
+     const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
+       e.preventDefault();
+       setLoading(true)
+       try {
+         const requestOptions = {
+           method: "POST",
+           headers: { "Content-Type": "application/json" },
+           body: JSON.stringify(data),
+         };
+         const res = await fetch("../api/contact/cont", requestOptions).then(
+           () => {
+             showToast.success("message sent successfully");
+           }
+         );
+       } catch (error) {
+         showToast.error("message not");
+       } finally {
+         setName("");
+         setEmail("");
+         setMessage("");
+         setLoading(false)
+       }
+     } 
+
 
     return (
  <div className="flex flex-col  gap-10 md:w-3/5 mx-auto px-5 md:px-0  translate-y-10 pb-14">
@@ -20,11 +54,20 @@ const ContactPage:FC = () =>{
       </span>
       </span>
       <div className="lg:w-[50%]">
-         <ContactForm />
+         <ContactForm
+         name={name}
+         email={email}
+         message={message}
+         setName={setName}
+         setEmail={setEmail}
+         setMessage={setMessage}
+         sendMessage={sendMessage}
+         loading={loading}
+         />
       </div>
-  </div>
-  </div>
-    )
+   </div>
+   </div>
+    );
 }
 
 export default ContactPage
