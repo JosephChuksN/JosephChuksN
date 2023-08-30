@@ -17,60 +17,9 @@ const Navbar:FC = () => {
 
    const pathname = usePathname()
    const activeItem:string = "text-[#F78D26] scale-75 transition-all delay-75 duration-300 ease-in-out"
-    // const navbar = useRef< null | HTMLDivElement>(null) ref={navbar}
     const {isNavOpen,  controlNavigation} = useNavbarControl()
     const { scrollDirection} = useScrollDirection()
 
-  //  let threshHold:number = 0;
-
-    // const handleNavScroll = ():void =>{
-    //   const navNode = navbar.current
-    //      const currentScroll = window.pageYOffset
-    //      if(currentScroll <= 0){
-    //       navNode?.classList.remove("shadow-lg", "backdrop-blur-lg", "md:py-4", "fixed")
-    //       navNode?.classList.add("md:py-8", "sticky", "top-0")
-    //      }
-    //      if(currentScroll > threshHold  && !navNode?.classList.contains("-translate-y-full")){
-    //       navNode?.classList.remove("shadow-lg",  "backdrop-blur-lg")
-    //       navNode?.classList.add("-translate-y-full")   
-    //      }
-    //      if(currentScroll < threshHold  && navNode?.classList.contains("-translate-y-full")){
-    //       navNode?.classList.remove("-translate-y-full", "md:py-8", "sticky", "top-0")
-    //       navNode?.classList.add("shadow-lg", "backdrop-blur-lg", "md:py-4", "fixed" )
-          
-    //      }
-     
-     
-    //    threshHold = currentScroll
-
-
-    // }
-    
-// useEffect(() =>{
-//   window.addEventListener("scroll", handleNavScroll)
-
-//   return () =>{
-//     window.removeEventListener("scroll", handleNavScroll)
-//   }
-
-
-// },[threshHold])
-// const currentScroll = window.scrollY
-
-// useEffect(()=>{
-//   const navNode = navbar.current
-  
-//    const handleAddClass = ():void =>{
-//     if(scrollDirection==="up"){
-//       navNode?.classList.add("shadow-lg")
-//     }else if (scrollDirection==="down" && currentScroll <=0){
-//       navNode?.classList.remove("shadow-lg")
-//     }
-//    }
-//    handleAddClass()
-// },[scrollDirection, currentScroll])
-
-    
 
     const NavItems:NavItems[] =[
       {name:"Home", link:"/"},
